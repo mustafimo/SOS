@@ -1,0 +1,67 @@
+{
+  "app": {
+    "bundleName": "com.mustafa.soss",
+    "vendor": "mustafa",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+
+  "deviceConfig": {},
+  "module": {
+    "package": "com.mustafa.soss",
+    "name": "SOS",
+    "mainAbility": "com.mustafa.soss.MainAbility",
+    "deviceType": [
+      "phone",
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.mustafa.soss.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:SOS",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/index/SOS/SOS"
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": true
+        }
+      }
+    ],
+    "metaData": {"customizeData":
+    [
+      {"extra": "",
+        "name": "hwc-theme",
+        "value": "androidhwext:style/Theme.Emui.Translucent.NoTitleBar.Fullscreen"
+
+    }]}
+  }
+}

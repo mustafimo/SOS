@@ -1,0 +1,17 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+/entry/.preview
+.cxx
+/material
+*.cer
+*.p7b
+*.csr
+*.p12
+/SOSRelease_provision_verified.json

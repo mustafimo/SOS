@@ -1,0 +1,15 @@
+/* index.css */
+.container {
+    flex-direction: column; /* Arrange container items vertically. */
+    justify-content: center; /* Center the items along the main axis of the container. */
+    align-items: center; /* Center the items along the cross axis of the container. */
+    background-size:120px ;
+}
+.circle {
+    radius: 100px;
+    icon-width: 100px;
+    icon-height: 100px;
+}
+.text{
+    font-size: 30px;
+}

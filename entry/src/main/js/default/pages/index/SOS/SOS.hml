@@ -1,0 +1,20 @@
+
+
+
+        <div class="content" style="background-color: {{bgColor}};" >
+            <button class="exit" type="circle" onclick="Exit" icon="common/images/exit.png">
+            </button>
+            <label show="{{isShow}}" class="label2" >Note!: Use the flash only in necessary situations to reduce the battery consumption! </label>
+            <label show="{{isShow}}" class="label" >Select the flash mode </label>
+  <div class="row" show="{{isShow}}" >
+      <button  type="circle" class="buttonS" onclick="slow" value='S' icon="common/images/S.png"></button>
+      <button type="circle" class="buttonM" onclick="mid" value='M' icon="common/images/M.png"></button>
+      <button type="circle" class="buttonF" onclick="fast" value='F' icon="common/images/F.png"></button>
+  </div>
+   <button class="reset" type="circle" onclick="refresh" icon="common/images/back.png">
+    </button>
+</div>
+
+
+
+

@@ -1,0 +1,5 @@
+<!-- index.hml -->
+<div class="container" onswipe="touchMove">
+<!-- Add a button, set its type to capsule, set button text to Next, and bind it to the launch event. -->
+    <button class="button circle" type="circle" onclick="launch" icon="common/images/sos.png"></button>
+</div>

@@ -1,0 +1,58 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.huawei.ohos.app'
+
+//For instructions on signature configuration, see https://developer.harmonyos.com/en/docs/documentation/doc-guides/ide_debug_device-0000001053822404#EN-US_TOPIC_0000001154985555__section1112183053510
+ohos {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\m84163636\\.ohos\\config\\auto_debug_890048000024105793.p12')
+            storePassword '000000189E8EA0CC32CC9823DAD5B35E46C6F5BB615E51723C8B4874301CD840A900104FA335FEF5'
+            keyAlias = 'debugKey'
+            keyPassword '00000018AFD331F9F68168A17338BD1F7022FCD76690A5B6407DA649887A89CA65B3C7BD8CDD50E3'
+            signAlg = 'SHA256withECDSA'
+            profile file('C:\\Users\\m84163636\\.ohos\\config\\auto_debug_soss_890048000024105793.p7b')
+            certpath file('C:\\Users\\m84163636\\.ohos\\config\\auto_debug_890048000024105793.cer')
+        }
+        release {
+            storeFile file('C:\\Users\\m84163636\\DevEcoStudioProjects\\SOS3\\SOS.p12')
+            storePassword '0000001869152D6D6D9B6CAE271813EF104F2F6B60FE1096D6E255F0951AEFC65C3F20BE62021889'
+            keyAlias = 'SOS_SOS'
+            keyPassword '00000018586A71313F4AF7D163C76A816D1CF59B6695CF5D61FBA17FE5C65C7601D6CADE9E6DB902'
+            signAlg = 'SHA256withECDSA'
+            profile file('C:\\Users\\m84163636\\DevEcoStudioProjects\\SOS3\\SOSRelease.p7b')
+            certpath file('C:\\Users\\m84163636\\DevEcoStudioProjects\\SOS3\\SOS.cer')
+        }
+    }
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 4
+    }
+}
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.huawei.ohos:hap:2.4.4.2'
+        classpath 'com.huawei.ohos:decctest:1.2.4.0'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+        jcenter()
+    }
+}

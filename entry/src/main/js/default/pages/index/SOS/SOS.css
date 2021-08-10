@@ -1,0 +1,51 @@
+.content{
+
+    flex-direction: column; /* Arrange container items vertically. */
+    justify-content: center; /* Center the items along the main axis of the container. */
+    align-items: center;
+
+}
+.row
+{
+    justify-content: center; /* Center the items along the main axis of the container. */
+    align-items: center;
+    top: 20px;
+
+}
+
+.reset {
+    width: 40px;
+    top: 22px;
+    icon-width: 20px;
+    icon-height: 20px;
+}
+.exit{
+      bottom: 20px;
+    icon-width: 20px;
+    icon-height: 20px;
+}
+.label{
+    font-size: 12px;
+    color: red;
+    top: 18px;
+}
+.label2{
+    font-size: 14px;
+    color: white;
+    top: 5px;
+    text-align: center;
+}
+
+.buttonS{
+right: 10px;
+    icon-width: 110px;
+    icon-height: 110px;
+}
+.buttonM{
+    icon-width: 110px;
+    icon-height: 110px;
+}
+.buttonF{
+left: 10px;
+
+}
